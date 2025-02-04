@@ -23,6 +23,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'area',
+                loader: () => fetch('https://www.themealdb.com/api/json/v1/1/list.php?a=list'),
                 element: <Area></Area>
             },
             {
